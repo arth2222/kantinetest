@@ -70,12 +70,12 @@ namespace WebAppTest
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand("SELECT * from Person where etternavn = @lastName", conn);
+                SqlCommand cmd = new SqlCommand("SELECT * from Person where fornavn = @forNavn", conn);
                 cmd.CommandType = CommandType.Text;
 
                 //params here
-                param = new SqlParameter("@lastName", SqlDbType.NChar);
-                param.Value = TextBoxLastName.Text; //variabel som blir sendt inn til metoden. Kommer fra bruker som tastet dette inn i et tekstfelt.
+                param = new SqlParameter("@forNavn", SqlDbType.NChar);
+                param.Value = TextBoxFirstName.Text; //variabel som blir sendt inn til metoden. Kommer fra bruker som tastet dette inn i et tekstfelt.
                 cmd.Parameters.Add(param);
 
 
