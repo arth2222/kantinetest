@@ -5,13 +5,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
 </head>
 <body>
     <form id="form1" runat="server">
         <h1>Din første DB-app</h1>
         <p>Fullfør denne slik at du har et godt eksempelprosjekt for DB-app! Denne bruker vår åpne databaseserver med
             adressen glemmen.bergersen.dk,4729
-        <br />
+        <p>Prosjekturl på git er: <a href="https://github.com/arth2222/SimpleWebAppWithDB">https://github.com/arth2222/SimpleWebAppWithDB</a> clone denne til din Visual Studio (ikke code).<br />
 
         <br />
         søk på etternavn<br />
