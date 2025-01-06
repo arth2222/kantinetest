@@ -28,10 +28,14 @@ namespace WebAppTest
                 reader.Close();
                 conn.Close();
             }
+            //sjekk hvordan indeks endres - husk å legge til labels med samme navn.
             LabelMan.Text= dt.Rows[0][0].ToString();
+            LabelTir.Text= dt.Rows[0][1].ToString();
+            LabelOns.Text= dt.Rows[0][2].ToString();
 
         }
 
+        //kun eksempelkode som ikke har noe med kantina å gjøre
         protected void ButtonSearchLastName_Click(object sender, EventArgs e)
         {
             //SqlParameter param;
@@ -60,6 +64,7 @@ namespace WebAppTest
             //GridView1.DataBind();
         }
 
+        //kun eksempelkode som ikke har noe med kantina å gjøre
         protected void ButtonSearchFirstName_Click(object sender, EventArgs e)
         {
             //SqlParameter param;
